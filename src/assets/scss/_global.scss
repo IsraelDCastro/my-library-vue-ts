@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222;
+  line-height: 1.5;
+  background-color: #FCFCFC;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.625em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px){
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.875em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.375em;
+  }
+}
+
+img, svg {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  scroll-behavior: smooth;
+  flex: 1 0 0;
+  position: relative;
+}
+
+.container {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
