@@ -5,6 +5,8 @@ import typescript2 from 'rollup-plugin-typescript2';
 import dts from "vite-plugin-dts";
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import sassDts from 'vite-plugin-sass-dts'
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -13,6 +15,7 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
     sassDts(),
+    cssInjectedByJsPlugin(),
     viteStaticCopy({
       targets: [
         { src: "src/assets/my-library-vue-ts.scss", dest: "dist/assets" },
