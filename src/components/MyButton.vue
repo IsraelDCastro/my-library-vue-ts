@@ -3,18 +3,21 @@
 
   interface Props {
     primary?: boolean;
+    text: string
   }
 
   const props = withDefaults(defineProps<Props>(), {
     primary: false,
   });
 
-  const { primary } = reactive(props);
+  const { primary, text } = reactive(props);
 </script>
 
 <template>
   <button class="btn" :class="{ primary }">
     <slot />
+    {{ primary }}
+    {{ text }}
   </button>
 </template>
 

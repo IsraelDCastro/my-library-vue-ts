@@ -1,7 +1,7 @@
 {
   "name": "my-library-vue-ts",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.14",
   "type": "module",
   "files": [
     "dist"
@@ -16,6 +16,14 @@
     "./dist/my-library-vue-ts.css": {
       "import": "./dist/my-library-vue-ts.css",
       "require": "./dist/my-library-vue-ts.css"
+    },
+    "./dist/my-library-vue-ts.min.css": {
+      "import": "./dist/my-library-vue-ts.min.css",
+      "require": "./dist/my-library-vue-ts.min.css"
+    },
+    "./dist/my-library-vue-ts.scss": {
+      "import": "./dist/my-library-vue-ts.scss",
+      "require": "./dist/my-library-vue-ts.scss"
     }
   },
   "types": "./dist/main.d.ts",
@@ -28,12 +36,18 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "path": "^0.12.7",
+    "prettier": "^2.8.1",
     "rollup-plugin-typescript2": "^0.34.1",
+    "sass": "^1.56.2",
+    "terser": "^5.16.6",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-sass-dts": "^1.2.7",
+    "vite-plugin-static-copy": "^0.13.0",
     "vue-tsc": "^1.0.11"
   }
 }
