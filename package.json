@@ -10,6 +10,7 @@
   "module": "./dist/my-library-vue-ts.es.js",
   "exports": {
     ".": {
+      "types": "./dist/main.d.ts",
       "import": "./dist/my-library-vue-ts.es.js",
       "require": "./dist/my-library-vue-ts.umd.js"
     },
